@@ -26,14 +26,18 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [
-  ],
+ css: [
+  {src: 'primevue/resources/primevue.min.css'},
+  {src: 'primevue/resources/themes/vela-green/theme.css'},
+  {src: 'primeicons/primeicons.css'},
+],
 
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-  ],
+ plugins: [
+  {src:'~/plugins/primevue.js', mode: 'client'}
+],
 
   /*
   ** Nuxt.js modules

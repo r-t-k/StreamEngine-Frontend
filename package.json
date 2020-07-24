@@ -1,8 +1,8 @@
 {
   "name": "app",
   "version": "1.0.0",
-  "description": "My outstanding Nuxt.js project",
-  "author": "Watt Iamsuri",
+  "description": "Full Stream Ahead!",
+  "author": "Tom Kyser",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -14,7 +14,10 @@
   },
   "dependencies": {
     "cross-env": "^7.0.2",
-    "nuxt": "^2.12.2"
+    "nuxt": "^2.12.2",
+    "primeflex": "^2.0.0-rc.1",
+    "primeicons": "^4.0.0",
+    "primevue": "^2.0.5"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
