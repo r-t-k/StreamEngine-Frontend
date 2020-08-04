@@ -7,6 +7,7 @@
         <Button label="Logout" icon="pi pi-power-off" />
       </MegaMenu>
       <div class="p-grid se-main-body">
+        <div class="p-col-fixed se-side-menu" style=" background: red">FIXED</div>
         <div class="p-col se-app-content">
           <nuxt />
         </div>

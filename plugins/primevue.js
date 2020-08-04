@@ -4,6 +4,8 @@ import Button from 'primevue/button';
 import Toast from 'primevue/toast';
 import ToastService from 'primevue/toastservice';
 import MegaMenu from 'primevue/megamenu';
+import Sidebar from 'primevue/sidebar';
+
 
 Vue.use(ToastService);
 
@@ -11,3 +13,4 @@ Vue.component('InputText', InputText);
 Vue.component('Button', Button);
 Vue.component('Toast', Toast);
 Vue.component('MegaMenu', MegaMenu);
+Vue.component('Sidebar', Sidebar);

@@ -8,42 +8,41 @@ module.exports = {
   */
   head: {
     title: pkg.name,
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+    meta : [
+      {charset: 'utf-8'},
+      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+      {hid: 'description', name: 'description', content: pkg.description}
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    link : [
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
     ]
   },
 
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: {color: '#fff'},
 
   /*
   ** Global CSS
   */
- css: [
-  {src: 'primevue/resources/primevue.min.css'},
-  {src: 'primevue/resources/themes/vela-green/theme.css'},
-  {src: 'primeicons/primeicons.css'},
-],
+  css: [
+    {src: 'primevue/resources/primevue.min.css'},
+    {src: 'primevue/resources/themes/vela-green/theme.css'},
+    {src: 'primeicons/primeicons.css'},
+  ],
 
   /*
   ** Plugins to load before mounting the App
   */
- plugins: [
-  {src:'~/plugins/primevue.js', mode: 'client'}
-],
+  plugins: [
+    {src: '~/plugins/primevue.js', mode: 'client'},
+  ],
 
   /*
   ** Nuxt.js modules
   */
-  modules: [
-  ],
+  modules: [],
 
   /*
   ** Build configuration
@@ -57,8 +56,8 @@ module.exports = {
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
+          test   : /\.(js|vue)$/,
+          loader : 'eslint-loader',
           exclude: /(node_modules)/
         })
       }
