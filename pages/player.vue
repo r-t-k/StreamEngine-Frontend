@@ -10,7 +10,7 @@
       <div id="player-grid" class="p-grid">
         <div v-bind:class="{ playerWithChat: visibleRight }" id="player-content" class="p-col-12">12</div>
         <Sidebar :visible.sync="visibleRight" position="right" class="chat-width">
-          Contents
+          <Chat />
         </Sidebar>
       </div>
     </div>
@@ -19,15 +19,17 @@
 </template>
 
 <script>
-
+	import Chat from '../components/Chat.vue'
 
 	export default {
 		layout: 'main',
 
-		components: {},
+		components: {
+			Chat,
+		},
 		data() {
 			return {
-				visibleRight  : false,
+				visibleRight  : true,
 				playerWithChat: false
 			}
 		}

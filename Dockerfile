@@ -10,6 +10,7 @@ RUN npm install vuex --save
 RUN npm install primevue --save
 RUN npm install primeicons --save
 RUN npm install primeflex --save
+RUN npm install quill --save
 RUN npm install
 
 RUN npm ci
