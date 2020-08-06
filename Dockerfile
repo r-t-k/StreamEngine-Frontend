@@ -6,7 +6,6 @@ RUN mkdir ${APP_ROOT}
 WORKDIR ${APP_ROOT}
 ADD . ${APP_ROOT}
 
-RUN npm install vuex --save
 RUN npm install primevue --save
 RUN npm install primeicons --save
 RUN npm install primeflex --save
